@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>css</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 150px;
+        border: 1px solid red;
+        margin: 30px;
+        padding: 10px 15px;
+        line-height: 1.6;
+        float: left;
+      }
+      .visible {
+        overflow: visible;
+      }
+
+      .hidden {
+        overflow: hidden;
+      }
+      .scroll {
+        overflow: scroll;
+      }
+
+      img {
+        width: 280px;
+      }
+
+      .hidden-x {
+        overflow-x: hidden;
+      }
+      .hidden-y {
+        overflow-y: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box visible">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+      consectetur nesciunt cum corporis distinctio itaque quos ipsa, officiis
+      suscipit magnam quae temporibus facilis voluptatum minima maxime
+      accusantium eius ullam debitis?
+    </div>
+
+    <div class="box hidden">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+      consectetur nesciunt cum corporis distinctio itaque quos ipsa, officiis
+      suscipit magnam quae temporibus facilis voluptatum minima maxime
+      accusantium eius ullam debitis?
+    </div>
+
+    <div class="box scroll">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+      consectetur nesciunt cum corporis distinctio itaque quos ipsa, officiis
+      suscipit magnam quae temporibus facilis voluptatum minima maxime
+      accusantium eius ullam debitis?
+    </div>
+
+    <div class="box">
+      <img src="student.jpg" alt="" />
+    </div>
+
+    <div class="box hidden-x">
+      <img src="student.jpg" alt="" />
+    </div>
+
+    <div class="box hidden-y">
+      <img src="student.jpg" alt="" />
+    </div>
+  </body>
+</html>
