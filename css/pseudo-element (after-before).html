@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      h1::after {
+        content: " 🙏";
+      }
+      p::before {
+        content: "👉 ";
+      }
+      p::selection {
+        background-color: black;
+        color: yellow;
+      }
+
+      input::placeholder {
+        color: rgb(184, 127, 127);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quam
+      quidem distinctio, voluptatum libero minima pariatur nostrum saepe esse
+      culpa consequuntur velit asperiores? Quod, ea perferendis eos unde porro
+      dolorum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+      eligendi error autem, aliquid doloribus veniam rem reiciendis. Debitis at
+      quasi ad eaque obcaecati est sequi molestiae ullam assumenda, temporibus
+      laboriosam.
+    </p>
+    <input type="text" placeholder="enter your name" />
+  </body>
+</html>

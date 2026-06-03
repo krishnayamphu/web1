@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      .box {
+        width: 800px;
+        height: 350px;
+        margin: 20px auto;
+        background: pink url(student.jpg);
+        background-repeat: no-repeat;
+        border: 10px solid black;
+      }
+      .cover {
+        background-size: cover;
+      }
+      .contain {
+        background-size: contain;
+      }
+      .full {
+        background-size: 100% 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box cover">cover</div>
+    <div class="box cont">contain</div>
+    <div class="box full">full</div>
+  </body>
+</html>

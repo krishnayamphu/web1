@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      img {
+        width: 300px;
+        height: 200px;
+        margin: 20px auto;
+        background: pink url(student.jpg);
+        background-repeat: no-repeat;
+        border: 10px solid black;
+        object-fit: contain;
+      }
+      .top {
+        object-position: top right;
+      }
+      .center {
+        object-fit: center;
+      }
+      .full {
+        object-position: 100% 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="pic.jpg" alt="" />
+    <img class="top" src="pic.jpg" alt="" />
+    <img class="contain" src="pic.jpg" alt="" />
+    <img class="full" src="pic.jpg" alt="" />
+  </body>
+</html>
