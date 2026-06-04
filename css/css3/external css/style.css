@@ -1,0 +1,14 @@
+body {
+  background-color: pink;
+}
+
+h1 {
+  color: blue;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-primary {
+  background-color: orange;
+}
