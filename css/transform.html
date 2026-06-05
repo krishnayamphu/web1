@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        float: left;
+        margin: 20px;
+        transition: all 0.5s ease;
+      }
+
+      .translate:hover {
+        transform: translate(50px, 50px);
+      }
+
+      .scale:hover {
+        transform: scale(2, 2);
+      }
+      .rotate:hover {
+        transform: rotate(-270deg);
+      }
+      .skew:hover {
+        transform: skew(45deg, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box translate"></div>
+    <div class="box scale"></div>
+    <div class="box rotate">box</div>
+    <div class="box skew">box</div>
+  </body>
+</html>
