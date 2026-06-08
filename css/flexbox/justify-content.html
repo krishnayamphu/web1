@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .row {
+        display: flex;
+        border: 1px solid red;
+        margin: 15px;
+      }
+      .col {
+        background-color: pink;
+        padding: 10px;
+      }
+      .col:nth-child(2) {
+        background-color: lightblue;
+      }
+      .center {
+        justify-content: center;
+      }
+      .flex-end {
+        justify-content: flex-end;
+      }
+      .justify-around {
+        justify-content: space-around;
+      }
+      .justify-between {
+        justify-content: space-between;
+      }
+      .justify-evenly {
+        justify-content: space-evenly;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </div>
+
+    <div class="row center">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </div>
+
+    <div class="row flex-end">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </div>
+
+    <div class="row justify-around">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </div>
+
+    <div class="row justify-between">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </div>
+
+    <div class="row justify-evenly">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </div>
+  </body>
+</html>

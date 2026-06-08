@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .row {
+        display: flex;
+        border: 1px solid red;
+        margin: 15px;
+      }
+      .col {
+        background-color: pink;
+        padding: 10px;
+      }
+      .col:nth-child(2) {
+        background-color: lightblue;
+      }
+      .gap-10 {
+        gap: 10px;
+      }
+      .gap-15 {
+        gap: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </div>
+
+    <div class="row gap-10">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </div>
+
+    <div class="row gap-15">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </div>
+  </body>
+</html>
