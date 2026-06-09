@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      @keyframes changeColor {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: blue;
+          transform: translateX(500%) rotateZ(360deg);
+        }
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        margin: 15px;
+        background-color: red;
+        animation-name: changeColor;
+        animation-timing-function: ease;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
