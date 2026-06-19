@@ -1,0 +1,13 @@
+#heroBanner {
+  background-image: url(../images/main-hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem 0;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#heroBanner h1 {
+  font-size: 100px;
+}
