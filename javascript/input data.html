@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-witdh, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <input type="text" id="txtbox" oninput="countText()" />
+    <p><span id="txtcount">0</span></p>
+
+    <hr />
+
+    <input
+      type="range"
+      id="slider"
+      oninput="getValue()"
+      min="0"
+      max="1000"
+    /><span id="rangeValue"></span>
+    <script>
+      function countText() {
+        let data = document.getElementById("txtbox").value;
+        let count = data.length;
+        document.getElementById("txtcount").innerHTML = count;
+      }
+
+      function getValue() {
+        let data = document.getElementById("slider").value;
+        document.getElementById("rangeValue").innerHTML = data;
+      }
+    </script>
+  </body>
+</html>
