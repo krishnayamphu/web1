@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-witdh, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <style>
+      input {
+        display: block;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const date = new Date();
+
+      let day = date.getDay() + 1;
+      let d = date.getDate();
+      let month = date.getMonth() + 1;
+      let y = date.getFullYear();
+      let h = date.getHours();
+      let m = date.getMinutes();
+      let s = date.getSeconds();
+      let ms = date.getMilliseconds();
+
+      document.writeln(date);
+      document.writeln("<br>" + day + ", " + d + " - " + month + " - " + y);
+      document.writeln("<br>" + h + " : " + m + " : " + s + " : " + ms);
+    </script>
+  </body>
+</html>

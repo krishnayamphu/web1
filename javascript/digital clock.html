@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-witdh, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <style>
+      input {
+        display: block;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="clock" />
+    <script>
+      function myDigitalClock() {
+        const date = new Date();
+
+        let h = date.getHours();
+        let m = date.getMinutes();
+        let s = date.getSeconds();
+        let ms = date.getMilliseconds();
+
+        if (h > 12) {
+          h = h - 12;
+        }
+        let time = (document.getElementById("clock").value =
+          +h + " : " + m + " : " + s + " : " + ms);
+        document.getElementById("clock").value = time;
+      }
+      setInterval(myDigitalClock, 1);
+    </script>
+  </body>
+</html>
