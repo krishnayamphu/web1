@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charts</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
+  <body>
+    <div id="myPlot" style="width: 100%; max-width: 1000px"></div>
+
+    <div id="myPlot2" style="width: 100%; max-width: 1000px"></div>
+
+    <script>
+      const xArray = ["Italy", "France", "Spain", "USA", "Argentina"];
+      const yArray = [55, 49, 44, 24, 15];
+      const layout = { title: "World Wide Wine Production" };
+      const data = [{ labels: xArray, values: yArray, type: "pie" }];
+      Plotly.newPlot("myPlot", data, layout);
+
+      //Pie chart
+      const xArray2 = ["Italy", "France", "Spain", "USA", "Nepal"];
+      const yArray2 = [55, 49, 44, 24, 20];
+      const data2 = [
+        {
+          x: xArray2,
+          y: yArray2,
+          type: "bar",
+          orientation: "v",
+          marker: { color: "rgba(0,0,255,0.6)" },
+        },
+      ];
+      const layout2 = { title: "World Wide Wine Production" };
+
+      Plotly.newPlot("myPlot2", data2, layout2);
+    </script>
+  </body>
+</html>
