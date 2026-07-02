@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <style>
+      .content {
+        background-color: rgb(78, 158, 78);
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">Add class</button>
+    <button id="btn2">Remove class</button>
+    <button id="btn3">Toggle class</button>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque
+      dolorem eligendi nemo, nesciunt tempora molestiae. Neque dolor molestiae
+      debitis esse possimus vitae, at nisi reiciendis rerum ratione, repellat
+      eius?
+    </p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("p").addClass("content");
+        });
+
+        $("#btn2").click(function () {
+          $("p").removeClass("content");
+        });
+
+        $("#btn3").click(function () {
+          $("p").toggleClass("content");
+        });
+      });
+    </script>
+  </body>
+</html>

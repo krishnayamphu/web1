@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+  </head>
+  <body>
+    <button id="btn1">Apply CSS</button>
+    <button id="btn2">Remove CSS</button>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque
+      dolorem eligendi nemo, nesciunt tempora molestiae. Neque dolor molestiae
+      debitis esse possimus vitae, at nisi reiciendis rerum ratione, repellat
+      eius?
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("p").css({
+            "background-color": "pink",
+            padding: "10px",
+          });
+        });
+
+        $("#btn2").click(function () {
+          $("p").css({
+            "background-color": "white",
+            padding: "0",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
